@@ -1,0 +1,320 @@
+body {
+    background: #000;
+    margin: 0;
+}
+#bgvid {
+    position: absolute;
+    top: -150px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -9999999;
+}
+
+.header {
+    padding: 0;
+    background: transparent url(../img2/PageNavbar-ocho.png);
+    height: 68px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999999;
+}
+
+.header-list {
+    background-color: transparent;
+}
+.header-list li {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(top, #ede0c9 20%, #8a7e66 100%);
+    background-size: 1.3em 1.3em;
+    background-position: top;
+    color: #ede0c9;
+    display: inline-block;
+    line-height: 1.3em;
+    text-shadow: none;
+    position: relative;
+    font-weight: bold;
+}
+
+.logo {
+    padding: 0;
+    margin-top: 150px;
+}
+
+.slogan2 {
+    margin-top: 30px;
+    width: 500px;
+}
+
+.logo-box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.download-box {
+    text-align: center;
+}
+.download-list {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.download-list li img {
+    width: 200px;
+}
+.download-list li {
+    /*float: left;*/
+    text-align: center;
+    width: 400px;
+}
+
+.gameshow {
+    text-align: center;
+    margin-top: 50px;
+}
+.show1 {
+    font-size: 43px;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(
+        top,
+        #fff 0,
+        #c6c6c6 7%,
+        #fff 20%,
+        #cfcfcf 38%,
+        #fef9ef 68%,
+        #c7beac 83%,
+        #dccdbc 100%
+    );
+    background-size: 1em 1em;
+    background-position: center;
+    color: #c6c6c6;
+    display: inline-block;
+    line-height: 1.3em;
+    text-shadow: none;
+    position: relative;
+}
+.show2 {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(
+        top,
+        #fff 0,
+        #c6c6c6 7%,
+        #fff 20%,
+        #cfcfcf 38%,
+        #fef9ef 68%,
+        #c7beac 83%,
+        #dccdbc 100%
+    );
+    background-size: 1em 1em;
+    background-position: center;
+    color: #c6c6c6;
+    line-height: 1.3em;
+    text-shadow: none;
+    position: relative;
+}
+
+.content-box {
+    margin-top: 40px;
+    padding: 0;
+    color: #fff;
+}
+
+.divider-top {
+    z-index: 999999;
+    height: 115px;
+    background: transparent url(../img2/Divider-ocho-thickUp.png) no-repeat
+        center top;
+}
+
+.divider-thin {
+    z-index: 999999;
+    height: 57px;
+    background: transparent url(../img2/Divider-ocho-thin.png) no-repeat center
+        center;
+}
+
+.divider-bottom {
+    margin-top: -30px;
+    z-index: 999999;
+    height: 115px;
+    background: transparent url(../img2/Divider-ocho-thickDown.png) no-repeat
+        center top;
+}
+
+.bignews {
+    margin-top: -50px;
+    margin-bottom: -21px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background: transparent url(../img2/box.png) no-repeat center center;
+}
+
+.qrcode {
+    text-align: center;
+}
+.qrcode img.qrcode_img {
+    width: 200px;
+}
+.qrcode audio {
+    width: 200px;
+}
+
+.bignews .content {
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bignews .content .lable {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 60px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(
+        top,
+        #fff 0,
+        #c6c6c6 7%,
+        #fff 20%,
+        #cfcfcf 38%,
+        #fef9ef 68%,
+        #c7beac 83%,
+        #dccdbc 100%
+    );
+    background-size: 1em 1em;
+    background-position: center;
+    color: #c6c6c6;
+    text-shadow: none;
+    text-align: center;
+}
+
+.gameinfo {
+    margin-top: -28px;
+    margin-bottom: -21px;
+    padding: 80px 300px;
+    background: transparent url(../img2/Box-leather.jpg) no-repeat center center;
+}
+
+.gameinfo h1 {
+    font-size: 40px;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(top, #ede0c9 20%, #8a7e66 100%);
+    background-size: 1.3em 1.3em;
+    background-position: top;
+    color: #ede0c9;
+}
+
+.gameinfo h1 img {
+    width: 60px;
+    display: none;
+    margin-right: 20px;
+}
+
+.gameinfo ol {
+    position: relative;
+    margin-top: 20px;
+    z-index: 99;
+}
+
+.gameinfo ol li {
+    background: transparent url(../img2/Chakram2.png) no-repeat left 4px;
+    padding-left: 35px;
+    margin-top: 10px;
+    list-style-position: inside;
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, Segoe UI Symbol, Segoe MDL2 Assets, 微软雅黑,
+        Microsoft YaHei, Hei SC, sans-serif;
+}
+
+.gameinfo ol li img {
+    width: 22px;
+    margin-right: 8px;
+}
+
+.gameinfo p {
+    font-size: 14px;
+    line-height: 28px;
+    position: relative;
+    z-index: 99;
+}
+
+.gameinfo h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(top, #ede0c9 20%, #8a7e66 100%);
+    background-size: 1.3em 1.3em;
+    background-position: top;
+    color: #ede0c9;
+}
+
+.bg1 {
+    background: transparent url(../img2/bg1.jpg) no-repeat center center;
+}
+.bg2 {
+    background: transparent url(../img2/bg2.jpg) no-repeat center center;
+}
+.bg3 {
+    background: transparent url(../img2/bg3.jpg) no-repeat center center;
+}
+.bg4 {
+    background: transparent url(../img2/bg4.jpg) no-repeat center center;
+}
+.bg5 {
+    background: transparent url(../img2/bg5.jpg) no-repeat center center;
+}
+
+.bossimg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 600px;
+}
+
+.footer {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 100;
+    margin-top: -70px;
+    padding: 100px;
+    text-align: center;
+    background: transparent url(../img2/Box-leather-blue.jpg) no-repeat center
+        center;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#exptable {
+    display: none;
+    margin: 20px;
+}
+
+#payinfo {
+    margin: 20px;
+    display: none;
+}
+
+#payinfo li {
+    margin-top: 8px;
+    line-height: 20px;
+    color: red;
+}

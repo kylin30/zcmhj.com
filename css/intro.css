@@ -1,0 +1,36 @@
+body {
+    background-color: #ffffff;
+}
+.main-box {
+    width: 960px;
+}
+.q-box {
+    border-radius: 10px;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 14px 0 rgba(0,0,0,.08);
+    border: 5px solid #2a80eb;
+}
+
+.q {
+    margin: 30px 0;
+    font-size: 50px;
+    font-weight: bold;
+    color: #2a80eb;
+}
+
+.intro-btn {
+    display: block;
+    width: 600px;
+    margin: 0 auto 20px;
+}
+
+.i {
+    margin-top: 50px;
+}
+.i img {
+    width: 400px;
+    height: 300px;
+}
