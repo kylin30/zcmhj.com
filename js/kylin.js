@@ -26,7 +26,9 @@ music.volume = 0.7;
 music.muted = false;
 
 $("body").mouseover(function () {
-    if (mousein) return;
+    if (mousein) {
+        return;
+    };
     music.play();
     mousein = true;
 });
