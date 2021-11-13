@@ -609,3 +609,110 @@ body {
     top: 20%;
     background-color: rgba(0, 0, 0, 0.6);
 }
+
+/* 全部游戏列表 */
+.more-game-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+    background: #054492;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 20px;
+    z-index: 99999999;
+    cursor: pointer;
+    user-select: none;
+}
+.more-game {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999999;
+    position: relative;
+    padding-top: 30px;
+    transition: all 1s ease-out;
+}
+
+.more-game .game-list-box {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.more-game .title {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-list .card {
+    overflow: hidden;
+    width: 320px;
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    background-color: #23252b;
+    border: 1px solid #23252b;
+}
+
+.card-list .card .header {
+    height: 40%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card-list .card .header img {
+    height: 100%;
+    width: 100%;
+}
+
+.card-list .card .body {
+    position: relative;
+    height: 60%;
+    letter-spacing: 1px;
+    color: hsla(0, 0%, 100%, 0.72);
+}
+
+.card-list .card .body .game-info-box {
+    box-sizing: border-box;
+    padding: 20px;
+    height: 100%;
+}
+
+.card-list .card .body .small-title {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.card-list .card .body .name {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #ffb400;
+}
+
+.card-list .card .body .info {
+    margin-bottom: 20px;
+}
+
+.card-list .card .body .website {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+}
+
+.card-list .card .body .website a {
+    color: #6cdb00;
+}
+.card-list .card .body .website a:visited {
+    color: #6cdb00;
+}

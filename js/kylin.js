@@ -47,6 +47,10 @@ $("#music-btn").bind("click", function () {
     }
 });
 
+$(".more-game-btn").click(function () {
+    $(".more-game").toggle();
+});
+
 
 layui.use('carousel', function () {
     var carousel = layui.carousel;
