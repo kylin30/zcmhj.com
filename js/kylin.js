@@ -20,10 +20,17 @@ const singleton = tippy.createSingleton(tippyInstances, {
     placement: 'right',
 });
 
+var mousein = false;
 var music = document.getElementById("audio");
 music.volume = 0.7;
 music.muted = false;
-music.play();
+
+$("body").mouseover(function () {
+    if (mousein) return;
+    music.play();
+    mousein = true;
+});
+
 
 $("#music-btn").bind("click", function () {
     if (music.paused) {
