@@ -24,6 +24,7 @@ var mousein = false;
 var music = document.getElementById("audio");
 music.volume = 0.7;
 music.muted = false;
+music.play();
 
 $("body").mouseover(function () {
     if (mousein) {
