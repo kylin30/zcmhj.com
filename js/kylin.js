@@ -49,6 +49,13 @@ $("#music-btn").bind("click", function () {
 
 $(".more-game-btn").click(function () {
     $(".more-game").toggle();
+    var text = $(this).text().trim();
+    if (text == "更多游戏") {
+        $(this).text("点击关闭");
+    }
+    else {
+        $(this).text("更多游戏");
+    }
 });
 
 
