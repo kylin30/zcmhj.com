@@ -616,14 +616,21 @@ body {
     right: 0;
     bottom: 0;
     margin: 20px;
-    background: #054492;
+    background: #0074e0;
     color: #ffffff;
-    border-radius: 50%;
-    padding: 20px;
+    border-radius: 100%;
+    padding: 10px 20px;
     z-index: 99999999;
     cursor: pointer;
     user-select: none;
+    text-align: center;
 }
+
+.more-game-btn img {
+    width: 50px;
+    margin-bottom: 8px;
+}
+
 .more-game {
     display: none;
     height: 100%;
