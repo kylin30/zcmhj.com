@@ -1,5 +1,4 @@
 // Zc176 Js & Coding By Kylin
-
 $("#paylink").attr("href", "ciSPofjrtN9JT1FhIb.html");
 $("#dlqlink").attr("href", "jw7C1x5UDU8zWXjlxE.html");
 var myFullpage = new fullpage('#fullpage', {
@@ -20,22 +19,23 @@ const singleton = tippy.createSingleton(tippyInstances, {
     placement: 'right',
 });
 
-var mousein = false;
 var music = document.getElementById("audio");
 music.volume = 0.7;
 music.muted = false;
-music.play();
-
-$("html").mouseover(function () {
-    mousein = true;
-});
-
-setInterval(() => {
-    if (mousein) {
+var music_timer = setInterval(() => {
+    try {
+        console.log("playing...");
         music.play();
+        if (music.currentTime > 0) {
+            clearInterval(music_timer);
+        }
     }
-}, 3000);
-
+    catch (err) {
+        console.log("error:" + err)
+    }
+}, 1000);
+$("#music-btn i").removeClass("layui-icon-play");
+$("#music-btn i").addClass("layui-icon-pause");
 
 $("#music-btn").bind("click", function () {
     if (music.paused) {
@@ -60,11 +60,12 @@ $(".more-game-btn").click(function () {
         $(this).text("更多游戏");
     }
 });
+setTimeout(function () {
+    $(".more-game-btn").show();
+}, 30000)
 
 layui.use('carousel', function () {
     var carousel = layui.carousel;
-
-
     //建造实例
     carousel.render({
         elem: '#maps'
@@ -79,8 +80,4 @@ layui.use('carousel', function () {
         , height: '240px'
         //,anim: 'updown' //切换动画方式
     });
-
-    setTimeout(function () {
-        $(".more-game-btn").show();
-    }, 30000)
 });
