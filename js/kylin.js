@@ -26,13 +26,15 @@ music.volume = 0.7;
 music.muted = false;
 music.play();
 
-$("body").mouseover(function () {
-    if (mousein) {
-        return;
-    };
-    music.play();
+$("html").mouseover(function () {
     mousein = true;
 });
+
+setInterval(() => {
+    if (mousein) {
+        music.play();
+    }
+}, 3000);
 
 
 $("#music-btn").bind("click", function () {
@@ -59,7 +61,6 @@ $(".more-game-btn").click(function () {
     }
 });
 
-
 layui.use('carousel', function () {
     var carousel = layui.carousel;
 
@@ -78,4 +79,8 @@ layui.use('carousel', function () {
         , height: '240px'
         //,anim: 'updown' //切换动画方式
     });
+
+    setTimeout(function () {
+        $(".more-game-btn").show();
+    }, 30000)
 });

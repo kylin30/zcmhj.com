@@ -612,6 +612,7 @@ body {
 
 /* 全部游戏列表 */
 .more-game-btn {
+    display: none;
     position: absolute;
     right: 0;
     bottom: 0;
