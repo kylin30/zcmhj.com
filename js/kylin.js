@@ -22,20 +22,7 @@ const singleton = tippy.createSingleton(tippyInstances, {
 var music = document.getElementById("audio");
 music.volume = 0.7;
 music.muted = false;
-var music_timer = setInterval(() => {
-    try {
-        console.log("playing...");
-        music.play();
-        if (music.currentTime > 0) {
-            clearInterval(music_timer);
-        }
-    }
-    catch (err) {
-        console.log("error:" + err)
-    }
-}, 1000);
-$("#music-btn i").removeClass("layui-icon-play");
-$("#music-btn i").addClass("layui-icon-pause");
+music.play();
 
 $("#music-btn").bind("click", function () {
     if (music.paused) {
