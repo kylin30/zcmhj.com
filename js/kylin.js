@@ -42,14 +42,23 @@ $(".more-game-btn").click(function () {
     var text = $(this).text().trim();
     if (text == "更多游戏") {
         $(this).text("点击关闭");
+        $(this).addClass("close")
     }
     else {
         $(this).text("更多游戏");
+        $(this).removeClass("close")
     }
 });
-setTimeout(function () {
+
+if (window.location.hostname == "www.zcmhj.com") {
     $(".more-game-btn").show();
-}, 30000)
+}
+else {
+    setTimeout(function () {
+        $(".more-game-btn").show();
+    }, 30000)
+}
+
 
 layui.use('carousel', function () {
     var carousel = layui.carousel;
