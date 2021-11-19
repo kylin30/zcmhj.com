@@ -98,10 +98,10 @@
           <div class="title">网盘下载</div>
           <a href="dlq/9pk/征程·漫画家.rar" target="_blank" class="netdisk" id="rar-nd">RAR格式</a>
           <a href="dlq/9pk/征程·漫画家.zip" target="_blank" class="netdisk" id="zip-nd">ZIP格式</a>
-          <div class="title">迅雷下载点①</div>
+          <!-- <div class="title">迅雷下载</div>
           <a href="http://manhuajia.top/9pk/征程·漫画家.rar" target="_blank" class="xunlei" id="rar-xunlei">RAR格式</a>
-          <a href="http://manhuajia.top/9pk/征程·漫画家.zip" target="_blank" class="xunlei" id="zip-xunlei">ZIP格式</a>
-          <div class="title">迅雷下载点②</div>
+          <a href="http://manhuajia.top/9pk/征程·漫画家.zip" target="_blank" class="xunlei" id="zip-xunlei">ZIP格式</a> -->
+          <div class="title">迅雷下载</div>
           <a href="dlq/9pk/征程·漫画家.rar" target="_blank" id="rar">RAR格式</a>
           <a href="dlq/9pk/征程·漫画家.zip" target="_blank" id="zip">ZIP格式</a>
         </div>
@@ -116,52 +116,36 @@
 
 
   <script>
-    var pk9 = ["mhm5yyum.top"];
-    var jjj = ["ynhi5slo.top"];
-    var zhaohf = ["anyw63wv.top"];
-    var sf1 = ["zcmhj.top"];
+    var data = {
+      "mhm5yyum.top": "9pk",
+      "wqfaphsb.top": "9pk",
+      "jqzpayut.top": "99j",
+      "rvzufmof.top": "88a",
+      "ynhi5slo.top": "jjj",
+      "fjvimmsw.top": "jjj",
+      "anyw63wv.top": "zhaohf",
+      "zcmhj.top": "1sf",
+    }
+
 
     var domain = window.location.hostname;
+    var site = data[domain];
 
-    if (pk9.indexOf(domain) > -1) {
-      document.getElementById('rar').href = "dlq/9pk/征程·漫画家.rar";
-      document.getElementById('zip').href = "dlq/9pk/征程·漫画家.zip";
-      document.getElementById('rar-xunlei').href = "http://manhuajia.top/dlq/9pk/征程·漫画家.rar";
-      document.getElementById('zip-xunlei').href = "http://manhuajia.top/dlq/9pk/征程·漫画家.zip";
-      document.getElementById('rar-nd').href = "https://kei.lanzouw.com/s/zcmhj-9pk";
-      document.getElementById('zip-nd').href = "https://kei.lanzouw.com/s/zcmhj-9pk";
-    }
-    else if (jjj.indexOf(domain) > -1) {
-      document.getElementById('rar').href = "dlq/jjj/征程·漫画家.rar";
-      document.getElementById('zip').href = "dlq/jjj/征程·漫画家.zip";
-      document.getElementById('rar-xunlei').href = "http://manhuajia.top/dlq/jjj/征程·漫画家.rar";
-      document.getElementById('zip-xunlei').href = "http://manhuajia.top/dlq/jjj/征程·漫画家.zip";
-      document.getElementById('rar-nd').href = "https://kei.lanzouw.com/s/zcmhj-jjj";
-      document.getElementById('zip-nd').href = "https://kei.lanzouw.com/s/zcmhj-jjj";
-    }
-    else if (zhaohf.indexOf(domain) > -1) {
-      document.getElementById('rar').href = "dlq/zhaohf/征程·漫画家.rar";
-      document.getElementById('zip').href = "dlq/zhaohf/征程·漫画家.zip";
-      document.getElementById('rar-xunlei').href = "http://manhuajia.top/dlq/zhaohf/征程·漫画家.rar";
-      document.getElementById('zip-xunlei').href = "http://manhuajia.top/dlq/zhaohf/征程·漫画家.zip";
-      document.getElementById('rar-nd').href = "https://kei.lanzouw.com/s/zcmhj-zhaohf";
-      document.getElementById('zip-nd').href = "https://kei.lanzouw.com/s/zcmhj-zhaohf";
-    }
-    else if (sf1.indexOf(domain) > -1) {
-      document.getElementById('rar').href = "dlq/1sf/征程·漫画家.rar";
-      document.getElementById('zip').href = "dlq/1sf/征程·漫画家.zip";
-      document.getElementById('rar-xunlei').href = "http://manhuajia.top/dlq/1sf/征程·漫画家.rar";
-      document.getElementById('zip-xunlei').href = "http://manhuajia.top/dlq/1sf/征程·漫画家.zip";
-      document.getElementById('rar-nd').href = "https://kei.lanzouw.com/s/zcmhj-1sf";
-      document.getElementById('zip-nd').href = "https://kei.lanzouw.com/s/zcmhj-1sf";
-    }
-    else {
+    if (site == undefined) {
       document.getElementById('rar').href = "https://kei.lanzouw.com/s/zcmhj-zcmhj";
       document.getElementById('zip').href = "https://kei.lanzouw.com/s/zcmhj-zcmhj";
-      document.getElementById('rar-xunlei').href = "https://kei.lanzouw.com/s/zcmhj-zcmhj";
-      document.getElementById('zip-xunlei').href = "https://kei.lanzouw.com/s/zcmhj-zcmhj";
+      // document.getElementById('rar-xunlei').href = "https://kei.lanzouw.com/s/zcmhj-zcmhj";
+      // document.getElementById('zip-xunlei').href = "https://kei.lanzouw.com/s/zcmhj-zcmhj";
       document.getElementById('rar-nd').href = "https://kei.lanzouw.com/s/zcmhj-zcmhj";
       document.getElementById('zip-nd').href = "https://kei.lanzouw.com/s/zcmhj-zcmhj";
+    }
+    else {
+      document.getElementById('rar').href = "dlq/" + site + "/征程·漫画家.rar";
+      document.getElementById('zip').href = "dlq/" + site + "/征程·漫画家.zip";
+      // document.getElementById('rar-xunlei').href = "https://manhuajia.top/dlq/" + site + "/征程·漫画家.rar";
+      // document.getElementById('zip-xunlei').href = "https://manhuajia.top/dlq/" + site + "/征程·漫画家.zip";
+      document.getElementById('rar-nd').href = "https://kei.lanzouw.com/s/zcmhj-" + site;
+      document.getElementById('zip-nd').href = "https://kei.lanzouw.com/s/zcmhj-" + site;
     }
   </script>
 
