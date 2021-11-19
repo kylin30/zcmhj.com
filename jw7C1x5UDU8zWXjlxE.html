@@ -14,29 +14,31 @@
 
     body {
       font-family: 'Microsoft YaHei', 微软雅黑, Tahoma, 'Lucida Grande', Arial, sans-serif;
-      font-size: 16px;
+      font-size: 12px;
     }
 
     .content {
-      width: 100%;
-      min-width: 800px;
-    }
-
-    .logo {
-      width: 800px;
-      margin: 50px auto;
-      text-align: center;
-    }
-
-    .pay {
-      width: 800px;
+      width: 600px;
       margin: 0 auto;
+      margin-top: 50px;
     }
 
     .fl {
       margin-bottom: 10px;
-      border: 2px #07121e solid;
+      text-align: center;
+      border: 1px #07121e solid;
       background-color: rgba(170, 170, 170, 0.2);
+    }
+
+    .fl p {
+      margin: 4px;
+    }
+
+    .title {
+      font-size: 27px;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
     #urls {
@@ -44,61 +46,44 @@
       padding: 30px;
     }
 
-    a.local {
+    a {
+      display: inline-block;
       color: #fff;
       margin: 10px;
       padding: 10px 20px;
       background-color: #eb4646;
       width: 150px;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 17px;
+      font-weight: bold;
       border-radius: 5px;
     }
 
-    a.local:hover {
+    a:hover {
       background: #800000;
       color: #fff;
     }
 
     a.netdisk {
-      color: #fff;
-      margin: 10px;
-      padding: 10px 20px;
       background-color: #2a80eb;
-      width: 150px;
-      text-decoration: none;
-      font-size: 16px;
-      border-radius: 5px;
     }
 
     a.netdisk:hover {
       background: #0057c3;
-      color: #fff;
     }
 
-    li {
-      color: #fff;
-      margin: 8px 0px;
-      list-style: none;
+
+    a.xunlei {
+      background-color: #1cad70;
     }
 
-    body,
-    td,
-    th {
-      font-family: "Microsoft YaHei", "微软雅黑", Tahoma, "Lucida Grande", Arial, sans-serif;
+    a.xunlei:hover {
+      background: #106340;
     }
 
-    .STYLE1 {
-      color: #8F5C3F
-    }
-
-    .STYLE2 {
-      color: #000;
-      text-align: center;
-    }
-
-    .STYLE5 {
-      color: #000
+    .banner {
+      height: 160px;
+      overflow: hidden;
     }
   </style>
 
@@ -106,22 +91,25 @@
 
 <body>
   <div class="content">
-
-    <div class="logo"><img src="img2/m2-logo.png" alt="" style="top: 0px; left: 0px;"></div>
-
     <div class="pay">
       <div class="fl">
+        <div class="banner"><img src="./img2/51_190430234524_1.jpg" alt=""></div>
         <div id="urls">
-          <a href="dlq/9pk/征程·漫画家.rar" target="_blank" class="netdisk" id="rar-nd">网盘下载Rar</a>
-          <a href="dlq/9pk/征程·漫画家.zip" target="_blank" class="netdisk" id="zip-nd">网盘下载Zip</a>
-          <a href="dlq/9pk/征程·漫画家.rar" target="_blank" class="local" id="rar">本地下载Rar</a>
-          <a href="dlq/9pk/征程·漫画家.zip" target="_blank" class="local" id="zip">本地下载Zip</a>
+          <div class="title">网盘下载</div>
+          <a href="dlq/9pk/征程·漫画家.rar" target="_blank" class="netdisk" id="rar-nd">RAR格式</a>
+          <a href="dlq/9pk/征程·漫画家.zip" target="_blank" class="netdisk" id="zip-nd">ZIP格式</a>
+          <div class="title">迅雷下载点①</div>
+          <a href="http://manhuajia.top/9pk/征程·漫画家.rar" target="_blank" class="xunlei" id="rar-xunlei">RAR格式</a>
+          <a href="http://manhuajia.top/9pk/征程·漫画家.zip" target="_blank" class="xunlei" id="zip-xunlei">ZIP格式</a>
+          <div class="title">迅雷下载点②</div>
+          <a href="dlq/9pk/征程·漫画家.rar" target="_blank" id="rar">RAR格式</a>
+          <a href="dlq/9pk/征程·漫画家.zip" target="_blank" id="zip">ZIP格式</a>
         </div>
       </div>
       <div class="fl">
-        <li class="STYLE2">请勿使用任何种类的外挂99%的外^挂都包含病毒.请大家爱护游戏环境。</li>
-        <li class="STYLE2">本游戏100个节点链接，保证不卡。在线即可微端更新,无需下载任何补丁。</li>
-        <li class="STYLE2">技术QQ：1262617176 有任何不懂之处可以联系技术协助处理</li>
+        <p>请勿使用任何种类的外挂99%的外^挂都包含病毒.请大家爱护游戏环境。</p>
+        <p>本游戏100个节点链接，保证不卡。在线即可微端更新,无需下载任何补丁。</p>
+        <p>技术QQ：1262617176 有任何不懂之处可以联系技术协助处理</p>
       </div>
     </div>
   </div>
@@ -138,32 +126,42 @@
     if (pk9.indexOf(domain) > -1) {
       document.getElementById('rar').href = "dlq/9pk/征程·漫画家.rar";
       document.getElementById('zip').href = "dlq/9pk/征程·漫画家.zip";
-      document.getElementById('rar-nd').href = "https://static-1251004461.cos.ap-shanghai.myqcloud.com/%E6%BC%AB%E7%94%BB%E5%AE%B6%E7%99%BB%E9%99%86%E5%99%A8/9pk/%E5%BE%81%E7%A8%8B%C2%B7%E6%BC%AB%E7%94%BB%E5%AE%B6.rar";
-      document.getElementById('zip-nd').href = "https://static-1251004461.cos.ap-shanghai.myqcloud.com/%E6%BC%AB%E7%94%BB%E5%AE%B6%E7%99%BB%E9%99%86%E5%99%A8/9pk/%E5%BE%81%E7%A8%8B%C2%B7%E6%BC%AB%E7%94%BB%E5%AE%B6.zip";
+      document.getElementById('rar-xunlei').href = "http://manhuajia.top/dlq/9pk/征程·漫画家.rar";
+      document.getElementById('zip-xunlei').href = "http://manhuajia.top/dlq/9pk/征程·漫画家.zip";
+      document.getElementById('rar-nd').href = "https://kei.lanzouw.com/s/zcmhj-9pk";
+      document.getElementById('zip-nd').href = "https://kei.lanzouw.com/s/zcmhj-9pk";
     }
     else if (jjj.indexOf(domain) > -1) {
       document.getElementById('rar').href = "dlq/jjj/征程·漫画家.rar";
       document.getElementById('zip').href = "dlq/jjj/征程·漫画家.zip";
-      document.getElementById('rar-nd').href = "https://static-1251004461.cos.ap-shanghai.myqcloud.com/%E6%BC%AB%E7%94%BB%E5%AE%B6%E7%99%BB%E9%99%86%E5%99%A8/jjj/%E5%BE%81%E7%A8%8B%C2%B7%E6%BC%AB%E7%94%BB%E5%AE%B6.rar";
-      document.getElementById('zip-nd').href = "https://static-1251004461.cos.ap-shanghai.myqcloud.com/%E6%BC%AB%E7%94%BB%E5%AE%B6%E7%99%BB%E9%99%86%E5%99%A8/jjj/%E5%BE%81%E7%A8%8B%C2%B7%E6%BC%AB%E7%94%BB%E5%AE%B6.zip";
+      document.getElementById('rar-xunlei').href = "http://manhuajia.top/dlq/jjj/征程·漫画家.rar";
+      document.getElementById('zip-xunlei').href = "http://manhuajia.top/dlq/jjj/征程·漫画家.zip";
+      document.getElementById('rar-nd').href = "https://kei.lanzouw.com/s/zcmhj-jjj";
+      document.getElementById('zip-nd').href = "https://kei.lanzouw.com/s/zcmhj-jjj";
     }
     else if (zhaohf.indexOf(domain) > -1) {
       document.getElementById('rar').href = "dlq/zhaohf/征程·漫画家.rar";
       document.getElementById('zip').href = "dlq/zhaohf/征程·漫画家.zip";
-      document.getElementById('rar-nd').href = "https://static-1251004461.cos.ap-shanghai.myqcloud.com/%E6%BC%AB%E7%94%BB%E5%AE%B6%E7%99%BB%E9%99%86%E5%99%A8/zhaohf/%E5%BE%81%E7%A8%8B%C2%B7%E6%BC%AB%E7%94%BB%E5%AE%B6.rar";
-      document.getElementById('zip-nd').href = "https://static-1251004461.cos.ap-shanghai.myqcloud.com/%E6%BC%AB%E7%94%BB%E5%AE%B6%E7%99%BB%E9%99%86%E5%99%A8/zhaohf/%E5%BE%81%E7%A8%8B%C2%B7%E6%BC%AB%E7%94%BB%E5%AE%B6.zip";
+      document.getElementById('rar-xunlei').href = "http://manhuajia.top/dlq/zhaohf/征程·漫画家.rar";
+      document.getElementById('zip-xunlei').href = "http://manhuajia.top/dlq/zhaohf/征程·漫画家.zip";
+      document.getElementById('rar-nd').href = "https://kei.lanzouw.com/s/zcmhj-zhaohf";
+      document.getElementById('zip-nd').href = "https://kei.lanzouw.com/s/zcmhj-zhaohf";
     }
     else if (sf1.indexOf(domain) > -1) {
       document.getElementById('rar').href = "dlq/1sf/征程·漫画家.rar";
       document.getElementById('zip').href = "dlq/1sf/征程·漫画家.zip";
-      document.getElementById('rar-nd').href = "https://static-1251004461.cos.ap-shanghai.myqcloud.com/%E6%BC%AB%E7%94%BB%E5%AE%B6%E7%99%BB%E9%99%86%E5%99%A8/1sf/%E5%BE%81%E7%A8%8B%C2%B7%E6%BC%AB%E7%94%BB%E5%AE%B6.rar";
-      document.getElementById('zip-nd').href = "https://static-1251004461.cos.ap-shanghai.myqcloud.com/%E6%BC%AB%E7%94%BB%E5%AE%B6%E7%99%BB%E9%99%86%E5%99%A8/1sf/%E5%BE%81%E7%A8%8B%C2%B7%E6%BC%AB%E7%94%BB%E5%AE%B6.zip";
+      document.getElementById('rar-xunlei').href = "http://manhuajia.top/dlq/1sf/征程·漫画家.rar";
+      document.getElementById('zip-xunlei').href = "http://manhuajia.top/dlq/1sf/征程·漫画家.zip";
+      document.getElementById('rar-nd').href = "https://kei.lanzouw.com/s/zcmhj-1sf";
+      document.getElementById('zip-nd').href = "https://kei.lanzouw.com/s/zcmhj-1sf";
     }
     else {
-      document.getElementById('rar').href = "https://static-1251004461.cos.ap-shanghai.myqcloud.com/%E6%BC%AB%E7%94%BB%E5%AE%B6%E7%99%BB%E9%99%86%E5%99%A8/zcmhj/%E5%BE%81%E7%A8%8B%C2%B7%E6%BC%AB%E7%94%BB%E5%AE%B6.rar";
-      document.getElementById('zip').href = "https://static-1251004461.cos.ap-shanghai.myqcloud.com/%E6%BC%AB%E7%94%BB%E5%AE%B6%E7%99%BB%E9%99%86%E5%99%A8/zcmhj/%E5%BE%81%E7%A8%8B%C2%B7%E6%BC%AB%E7%94%BB%E5%AE%B6.zip";
-      document.getElementById('rar-nd').href = "https://static-1251004461.cos.ap-shanghai.myqcloud.com/%E6%BC%AB%E7%94%BB%E5%AE%B6%E7%99%BB%E9%99%86%E5%99%A8/zcmhj/%E5%BE%81%E7%A8%8B%C2%B7%E6%BC%AB%E7%94%BB%E5%AE%B6.rar";
-      document.getElementById('zip-nd').href = "https://static-1251004461.cos.ap-shanghai.myqcloud.com/%E6%BC%AB%E7%94%BB%E5%AE%B6%E7%99%BB%E9%99%86%E5%99%A8/zcmhj/%E5%BE%81%E7%A8%8B%C2%B7%E6%BC%AB%E7%94%BB%E5%AE%B6.zip";
+      document.getElementById('rar').href = "https://kei.lanzouw.com/s/zcmhj-zcmhj";
+      document.getElementById('zip').href = "https://kei.lanzouw.com/s/zcmhj-zcmhj";
+      document.getElementById('rar-xunlei').href = "https://kei.lanzouw.com/s/zcmhj-zcmhj";
+      document.getElementById('zip-xunlei').href = "https://kei.lanzouw.com/s/zcmhj-zcmhj";
+      document.getElementById('rar-nd').href = "https://kei.lanzouw.com/s/zcmhj-zcmhj";
+      document.getElementById('zip-nd').href = "https://kei.lanzouw.com/s/zcmhj-zcmhj";
     }
   </script>
 
